@@ -23,6 +23,7 @@ The board is split up as follows:
 ## What you need:
 Download all the files in this repo as they will be used to give you the full experience of the game.
 - The .mp3 files are used to add on certain sound effects.
+- After downloading everything and ensuring it is in the same directory, right click on the ``` tic_tac_toe.html ``` file, then open with Chrome.
 
 ### Bugs and limitations:
 The project works best on desktop Chrome. The Speech Synthesis API doesn't work on Internet Explorer. The Speech Recognitino API is only reliable and works best on Chrome.
