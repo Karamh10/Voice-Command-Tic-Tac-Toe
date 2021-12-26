@@ -26,5 +26,7 @@ Download all the files in this repo as they will be used to give you the full ex
 - After downloading everything and ensuring it is in the same directory, right click on the ``` tic_tac_toe.html ``` file, then open with Chrome.
 
 ### Bugs and limitations:
-The project works best on desktop Chrome. The Speech Synthesis API doesn't work on Internet Explorer. The Speech Recognitino API is only reliable and works best on Chrome.
+- The project works best on desktop Chrome. The Speech Synthesis API doesn't work on Internet Explorer. The Speech Recognitino API is only reliable and works best on Chrome.
+- Take it easy on the game as the voice control takes time to display the action outloud.
+
 
