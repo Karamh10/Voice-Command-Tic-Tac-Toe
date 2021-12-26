@@ -1,0 +1,115 @@
+/*CSS portion of program*/
+
+body
+{
+    font-family: "Arial", sans-serif;
+    background-color: powderblue;
+}
+
+button
+{
+    font-family: "Arial", sans-serif;
+    padding: 10px;
+    margin: 5px;
+    background-color: #0000ff;
+    color: #FFFFFF;
+    border: 0px;
+    cursor:pointer;
+    border-radius: 5px;
+    position: relative;
+    width:auto;
+}
+
+p
+{
+    font-family: "Arial", sans-serif;
+}
+
+section
+{
+    text-align: center;
+}
+
+.container
+{
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-family: "Arial" sans-serif;
+}
+
+.game--container
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 450px;
+    float: left;
+}
+
+.game--restart
+{
+    padding: 10px;
+    margin-bottom: 12px;
+    background-color: #ff0000;
+    color: #FFFFFF;
+    border: 0px;
+    cursor:pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+.cell
+{
+    font-family: "Arial" sans-serif;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 3px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+
+.colorscheme
+{
+    width: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.main
+{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.instructions
+{
+    text-align: left;
+    margin-left: 25px;
+    float: left;
+    width: 300px;
+    padding-left: 20px;
+}
+
+.top
+{
+    width: 100%;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.bottom
+{
+    width = 100%;
+}
+
+.column
+{
+    width: 130px;
+    float: left;
+}

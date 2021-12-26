@@ -1,0 +1,113 @@
+<!-- HTML portion of program -->
+
+<!doctype html>
+<html lang = "en">
+
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name = "viewport">
+    <meta content = "width=device-width, user-scalable = no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+    <meta http-equiv = "X-UA-Compatible">
+    <meta content = "ie=edge">
+
+    <title>Tic Tac Toe Board Game</title>
+
+    <link rel = "stylesheet" href = "tic_tac_toe.css">
+
+</head>
+
+<body onkeypress = "handleKeyboard(event)">
+
+    <audio id = "myAudio">
+        <source src = "ukelele.mp3" type = "audio/mp3">
+    </audio>
+
+    <audio id = "myAudio1">
+        <source src = "ding.mp3" type = "audio/mp3">
+    </audio>
+
+    <section id = "webText">
+
+
+
+        <h1 class = "game--title">Tic Tac Toe!</h1>
+
+
+
+        <div class = "main">
+
+          <div class = "colorscheme">
+            <h3>Change the Color Scheme</h3>
+            <button onclick="changeCSS('tic_tac_toe.css');"  class = "button">Default</button>
+            <button onclick="changeCSS('darkmode.css');"  class = "button">High Contrast</button>
+            <button onclick="changeCSS('yellowonblack.css');"  class = "button">Yellow on Black</button>
+            <button onclick="changeCSS('blackonyellow.css');"  class = "button">Black on Yellow</button>
+            <h3>Read the board</h3>
+            <div class = "column" id = "buttons1">
+             <button id = "readBoard" class = "button" onclick = "readBoard()">Read the Board</button>
+             <button id = "readBoardFaster" class = "button" onclick = "readBoardFaster()" >Read Faster</button>
+             <button id = "readBoardSlower" class = "button" onclick = "readBoardSlower()">Read Slower</button>
+           </div>
+           <div class = "column" id = "buttons2">
+             <button id = "X Locations" class = "button" onclick = "xLocation()">X Location </button>
+             <button id = "O Locations" class = "button" onclick = "oLocation()" >O Location</button>
+             <button id = "Empty Locations" class = "button" onclick = "emptyLocation()">Empty Location</button>
+             <div id = "output" class = "hide"></div>
+           </div>
+          </div>
+
+        <div class = "game--container">
+            <div data-cell-index = "0" class = "cell" id = "1"></div>
+            <div data-cell-index = "1" class = "cell" id = "2"></div>
+            <div data-cell-index = "2" class = "cell" id = "3"></div>
+            <div data-cell-index = "3" class = "cell" id = "4"></div>
+            <div data-cell-index = "4" class = "cell" id = "5"></div>
+            <div data-cell-index = "5" class = "cell" id = "6"></div>
+            <div data-cell-index = "6" class = "cell" id = "7"></div>
+            <div data-cell-index = "7" class = "cell" id = "8"></div>
+            <div data-cell-index = "8" class = "cell" id = "9"></div>
+        </div>
+          <div class = "instructions">
+            <p>
+            To choose a box, you can say the box name using:
+            <ul>
+              <li>the Voice Recognition
+              button</li>
+              <li>a mouse to click the box</li>
+              <li>the keyboard</li>
+            </ul>
+            Voice commands you can use:
+            <ul>
+              <li>read: reads the state of the board</li>
+              <li>reset: resets the state of the board</li>
+              <li>say what is on the button</li>
+            </ul>
+            <br>To use voice control or the keyboard, state or press the number corresponding to the box as shown in the key below
+            <br>
+            <br>[1] [2] [3]
+            <br>[4] [5] [6]
+            <br>[7] [8] [9]
+            <br>
+            <br>Example: Box 1 is top left, Say 1, click the box, or press 1 on the keyboard
+            </p>
+            <button id = "increaseFont" onclick = "increaseFontSize()"  class = "button">Increase Font Size</button>
+            <button id = "decreaseFont" onclick = "decreaseFontSize()"  class = "button">Decrease Font Size</button>
+          </div>
+      </div>
+      <div class = "bottom">
+
+        <h2 class = "game--status"></h2>
+
+
+        <button id = "resetButton" class = "game--restart" onclick = "handleRestartGame()">Click to reset</button>
+        <button id = "record" onclick = "speechRecognition()"  class = "button">Voice Recognition</button> &nbsp; <span id = "action"></span>
+
+      </div>
+    </section>
+    <!-- read v7-->
+    <script src = "tic_tac_toe.js"></script>
+
+</body>
+
+</html>
